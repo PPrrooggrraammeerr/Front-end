@@ -1,0 +1,33 @@
+.title {
+    text-align: left;
+    color: darkred;
+}
+
+li {
+    text-align: left;
+    color: darkslategray;
+}
+
+.tables {
+    text-align: center;
+    color: midnightblue;
+}
+
+tr {
+    text-align: center;
+    color: darkslategray;
+}
+
+.finish {
+    margin: auto;
+    padding: 100px;
+    font-family: sans-serif;
+    text-align: center;
+    color: white;
+    width: 70%;
+    height: 50px;
+    background-color: black;
+    border: 5px solid red;
+    padding: 60px;
+    padding-bottom: auto;
+}
