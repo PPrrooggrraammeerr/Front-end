@@ -1,0 +1,207 @@
+/* Estilo global para o elemento html e body */
+html, body {
+    height: 100%; 
+    font-family: arial;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Estilo para o conteúdo principal */
+.content {
+    min-height: calc(100% - 15px);  /* Define a altura mínima considerando o tamanho do footer */
+    padding-bottom: 0px;
+}
+
+/* Estilo para a barra de menu */
+.menu-bar {
+    display: flex;
+    justify-content: center;
+    padding: 25px;
+}
+
+/* Estilo para os itens dentro da barra de menu */
+.menu-items {
+    display: flex;
+    gap: 20px;
+}
+
+/* Estilo para os links dentro dos itens de menu */
+.menu-items a {
+    font-size: 25px;
+    padding: 15px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-radius: 5px;
+    background-color: #ff0000;
+}
+
+/* Efeito hover para os links do menu */
+.menu-items a:hover {
+    color: black;
+    background-color: #d22e2e;
+}
+
+/* Estilo para a marca/branding */
+.branding {
+    display: flex;
+    align-items: center;
+    margin-right: 100px;
+}
+
+.branding-container {
+    display: flex; /* Alinha os itens lado a lado */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    gap: 25px; /* Espaço entre a imagem e o texto */
+}
+
+/* Estilo para a imagem da marca */
+.branding-img {
+    height: 100px; /* Exemplo: ajuste a altura conforme necessário */
+}
+
+.instagram {
+    height: 50px;
+}
+
+.mascote {
+	width: 225px;
+    height: 215px;
+    border-radius: 2px;
+}
+
+.nome_logo {
+	font-size: 35px;
+    text-align: center;
+}
+
+/* Estilo para o banner principal */
+.main-banner {
+    font-size: 20px;
+    color: white;
+    background-color: #666666;
+    padding: 30px 0;
+    height: 200px;
+    text-align: center;
+}
+
+.sobre-nos-container {
+    font-size: 17px;
+    text-align: justify;
+    max-width: 775px; /* Largura máxima para leitura confortável */
+    margin: auto; /* Centraliza o contêiner */
+    padding: 20px;
+}
+
+.sobre-nos-container h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.missao-visao-valores {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaço entre os blocos */
+}
+
+.bloco {
+    border: 1px solid #ccc; /* Borda para os blocos */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para efeito de elevação */
+    padding: 20px;
+    width: 275px; /* Largura fixa para cada bloco */
+    height: 300px; /* Altura fixa para cada bloco */
+    text-align: center; /* Centraliza o texto */
+    background-color: #dcdcdc; /* Cor de fundo */
+    overflow: auto; /* Adiciona barra de rolagem se o conteúdo exceder o tamanho do bloco */
+}
+
+.bloco h2 {
+    text-align: center;
+    color: #333; /* Cor do título */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+    color: red;
+}
+
+.bloco p {
+    color: #666; /* Cor do parágrafo */
+    font-size: 16px; /* Tamanho da fonte */
+    line-height: 1.4; /* Espaçamento entre linhas */
+}
+
+.missao {
+    width: 50px;
+    height: 50px;
+}
+
+.visao {
+    width: 80px;
+    height: 45px;
+}
+
+.valores {
+    width: 57px;
+    height: 65px;
+}
+
+.centralizado {
+    text-align: center; /* Centraliza todo o conteúdo dentro */
+}
+
+.titulo-centro {
+    font-size: 40px;
+}
+
+.imagens-container {
+    display: flex;
+    justify-content: center; /* Centraliza os itens horizontalmente */
+    gap: 20px; /* Espaçamento entre cada grupo de imagem e texto */
+}
+
+.imagem-texto {
+    display: flex;
+    flex-direction: column; /* Organiza a imagem e o texto em coluna */
+    align-items: center; /* Centraliza a imagem e o texto verticalmente */
+}
+
+.imagem1 {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.imagem2 {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.imagem3 {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.imagem4 {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.lugar {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* Estilo para o rodapé */
+footer {
+    font-size: 18px;
+    background-color: darkgrey;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
+    height: 45px;
+}
