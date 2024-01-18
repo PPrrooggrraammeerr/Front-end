@@ -1,0 +1,348 @@
+
+body {
+	background: #F1F0EE;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	padding: 25px 0 10px 100px; /* padding: top right bottom left */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 55px;
+}
+
+.header {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.logo-image {
+	width: 185px; /* Exemplo de largura */
+	height: auto; /* Mantém a proporção da imagem */
+}
+
+.title {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 450px;
+}
+
+.title-primary, .title-secondary {
+	font-size: 35.57px;
+	font-family: Graphik;
+	font-weight: 600;
+}
+
+.title-primary {
+	color: black;
+}
+
+.title-secondary {
+	color: rgba(0, 0, 0, 0.30);
+}
+
+.social-links {
+	display: flex;
+	gap: 10px;
+}
+
+.social-icon {
+	width: 55px;
+	height: 55px;
+}
+
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 24px;
+}
+
+.heading {
+	color: #101828;
+	font-size: 60px;
+	font-family: Relative;
+	font-weight: 500;
+	line-height: 72px;
+}
+
+.subheading {
+	color: #161616;
+	font-size: 20px;
+	font-family: Relative;
+	font-weight: 400;
+	line-height: 30px;
+}
+
+.main-container {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.divider-line {
+    width: 800px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.section-title {
+    width: 801px;
+    color: #101828;
+    font-size: 40px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.section-text, .sub-section-text, .concluding-text {
+    width: 801px;
+    color: rgba(22, 22, 22, 0.60);
+    font-size: 18px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.sub-section {
+    display: flex;
+    gap: 12px;
+    align-items: flex-start;
+}
+
+.bullet-icon {
+    width: 24px;
+    height: 24px;
+    position: relative;
+    background: black; /* Remover caso use imagem */
+}
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: flex-start;
+}
+
+.top-divider {
+    width: 800px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.start-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-title {
+    width: 801px;
+    color: #101828;
+    font-size: 40px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 48px;
+}
+
+.start-section, .long-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.section-heading {
+    color: #161616;
+    font-size: 24px;
+    font-family: Relative;
+    font-weight: 500;
+    line-height: 36px;
+}
+
+.section-description, .long-section-description {
+    color: rgba(22, 22, 22, 0.60);
+    font-size: 18px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 27px;
+}
+
+.resource-link {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.resource-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.resource-text {
+    color: #161616;
+    font-size: 18px;
+    font-family: Relative;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 28px;
+}
+
+.section-image {
+    width: 801px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.creator-container {
+    padding: 24px;
+    background: #E4E2DF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.creator-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.creator-title {
+    width: 399px;
+    color: #101828;
+    font-size: 24px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 28.80px;
+}
+
+.creator-info {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+}
+
+.creator-icon {
+    width: 63px;
+    height: 63px;
+    background: black;
+    /* Estilo adicional para ícone, se necessário */
+}
+
+.creator-description {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.creator-company {
+    color: #161616;
+    font-weight: 500;
+}
+
+.creator-links {
+    display: flex;
+    gap: 16px;
+}
+
+.creator-link {
+    color: #161616;
+    font-size: 18px;
+    font-family: Relative;
+    font-weight: 500;
+    text-decoration: underline;
+    line-height: 28px;
+}
+
+.creator-divider {
+    width: 399px;
+    height: 0px;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.creator-profiles {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.creator-profile {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.profile-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 9999px;
+}
+
+.profile-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.profile-name {
+    width: 320px;
+    color: #161616;
+    font-size: 16px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.profile-role {
+    width: 320px;
+    color: #161616;
+    font-size: 14px;
+    font-family: Relative;
+    font-weight: 400;
+    line-height: 21px;
+}
+
+/* Adicione estilos adicionais conforme necessário */
+
+.start-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.flex-container {
+    display: flex;
+    gap: 20px;
+}
+
+.text-content {
+    flex: 1;
+}
+
+.creator-container {
+    padding: 24px;
+    background: #E4E2DF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    width: 399px;  /* Ajuste a largura conforme necessário */
+}
+
+/* Mantenha os estilos existentes para .section-title, .section-text, .sub-section, etc. */
+
