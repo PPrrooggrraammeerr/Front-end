@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/sobre.css">
+    <title>Apma's turismo</title>
+</head>
+<body>
+	<footer class="up"> </footer>
+    <div class="container">
+        <div class="header">
+            <img src="icons/logo.png" alt="Logo" class="logo-image">
+            <div class="title">
+                <div class="search-container">
+                    <input type="search" id="searchBar" name="searchBar" placeholder="Buscar em Apma's turismo..." aria-label="Buscar">
+                    <button type="submit" class="search-button">🔍</button>
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <div class="menu-options" style="display: none;">
+                        <a href="index.html" target="_blank"> <b> Início </b> </a>
+                        <a href="sobre.html" target="_blank"> <b> Sobre </b> </a>
+                        <a href="sobre.html" target="_blank"> <b> Novidades </b> </a>
+                        <a href="https://www.tiktok.com/@apmas_oficial" target="_blank"> <b> Contato </b> </a>
+                    </div>
+                </div>
+                <script>
+                    function toggleMenu(event) {
+                        const menu = document.querySelector('.menu-options');
+                        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+                        event.stopPropagation();
+                    }
+
+                    document.addEventListener('click', function(event) {
+                        if (!event.target.closest('.menu-icon')) {
+                            const allMenus = document.querySelectorAll('.menu-options');
+                            allMenus.forEach(menu => menu.style.display = 'none');
+                        }
+                    });
+
+                    document.querySelector('.menu-icon').addEventListener('click', function(event) {
+                        event.stopPropagation();
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <br>
+            <div class="heading">Seja bem-vindo(a) ao Apma's turismo!</div>
+            <br>
+            <div class="subheading">Fique por dentro das novidades e acompanhe uma grande página de dicas de São Paulo em um só lugar.</div>
+        </div>
+        <div class="divider-line"></div>
+        <br>
+		<div class="main-container">
+	        <div class="content-section">
+	        	<div class="section-title">Sobre</div>
+	            <br>
+	            <div class="section-text">
+	                Comprometida em transformar viagens em experiências inesquecíveis, focando em tranquilidade, diversão e valorização da cultura local. Promovemos experiências autênticas e conexões com a comunidade.
+	                Tornar-se referência em dicas e ingressos para eventos em São Paulo até 2029, com excelência em recomendações turísticas. Nosso objetivo é revelar e compartilhar as melhores experiências de São Paulo.
+	            </div>
+	            <br> <br>
+	            <div class="sub-section">
+	                <div class="bullet-icon1">
+	                    <img class="bullet-icon1" src="icons/missao.png" alt="Ícone de missão" />
+	                </div>
+	                <div class="sub-section-text">
+	                    <h2>Missão</h2>
+	                    Nossa missão é proporcionar às pessoas <br>
+	                    momentos de lazer, tranquilidade, conforto <br>
+	                    e diversão, visando prover a melhor experiência <br>
+	                    aos nossos seguidores e valorização da cultura local. <br>
+	                </div>
+	            </div>
+	            <br>
+	            <div class="sub-section">
+	                <div class="bullet-icon2">
+	                    <img class="bullet-icon2" src="icons/visao.png" alt="Ícone de visão" />
+	                </div>
+	                <div class="sub-section-text">
+	                    <h2>Visão</h2>
+	                    Buscamos ser referência como uma grande página <br>
+	                    de dicas e divulgação de ingressos para eventos <br>
+	                    diversos em São Paulo, reconhecida pelos nossos <br>
+	                    seguidores por excelência em recomendações turísticas até 2029. <br>
+	                </div>
+	            </div>
+	            <br>
+	            <div class="sub-section">
+	                <div class="bullet-icon3">
+	                    <img class="bullet-icon3" src="icons/valores.png" alt="Ícone de valores" />
+	                </div>
+	                <div class="sub-section-text">
+	                    <h2>Valores</h2>
+	                    Comprometimento, transparência e ética, <br>
+	                    eficiência, confiabilidade, respeito e empatia. <br>
+	                </div>
+	            </div>
+	            <br> <br>
+	            <div class="concluding-text">
+	                Compromisso com transparência, ética, eficiência, confiabilidade, respeito pela cultura local e empatia com seguidores. Esses valores são fundamentais para construir uma comunidade confiável e engajada.
+	                Inspirar e enriquecer a experiência dos seguidores em cada dica e evento compartilhados. Convidamos todos para uma jornada de descobertas e experiências memoráveis.
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	<br> <br> <br>
+	<footer class="down">
+        <p class="footer"> &copy; 2023 Apma's turismo. Todos os direitos reservados. | Contato: apma's@turismo.com.br </p>
+    </footer>
+</body>
+</html>
