@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Apma's turismo</title>
+</head>
+<body>
+    <footer class="up"> </footer>
+    <div class="container">
+        <div class="header">
+            <img src="icons/logo.png" alt="Logo" class="logo-image">
+            <div class="title">
+                <div class="search-container">
+                    <input type="search" id="searchBar" name="searchBar" placeholder="Aonde quer ir..." aria-label="Buscar">
+                    <button type="submit" class="search-button">🔍</button>
+                    <div class="menu-bar">
+                        <div class="menu-items">
+                            <a href="index.html"> Início </a>
+                            <a href="sobre.html"> Sobre </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h1> | </h1>
+            <div class="social-links">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <div class="menu-options" style="display: none;">
+                        <a href="sobre.html" target="_blank"> <b> Novidades </b> </a>
+                        <a href="sobre.html" target="_blank"> <b> Calendário </b> </a>
+                        <a href="https://www.tiktok.com/@apmas_oficial" target="_blank"> <b> Contato </b> </a>
+                    </div>
+                </div>
+                <script>
+                    function toggleMenu(event) {
+                        const menu = document.querySelector('.menu-options');
+                        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+                        event.stopPropagation();
+                    }
+
+                    document.addEventListener('click', function(event) {
+                        if (!event.target.closest('.menu-icon')) {
+                            const allMenus = document.querySelectorAll('.menu-options');
+                            allMenus.forEach(menu => menu.style.display = 'none');
+                        }
+                    });
+
+                    document.querySelector('.menu-icon').addEventListener('click', function(event) {
+                        event.stopPropagation();
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <br>
+            <div class="heading">Seja bem-vindo(a) ao Apma's turismo!</div>
+            <br>
+            <div class="subheading">Fique por dentro das novidades e acompanhe uma grande página de dicas de São Paulo em um só lugar.</div>
+        </div>
+        <div class="divider-line"></div>
+        <br>
+        <div class="section">
+            <div class="section-title">Descubra São Paulo</div>
+            <div class="section-content">
+                <div class="section-header">Guia de turismo com diversas categorias</div>
+                <div class="section-text">Explore as maravilhas de São Paulo com nosso guia turístico completo. Encontre abaixo recursos e dicas para aproveitar o melhor da cidade:</div>
+            </div>
+            <div class="banner">
+                <img src="images/ponte.jpg" alt="Vista de São Paulo" class="banner-image">
+                <a href="/calendario" class="calendar-link">
+                    Novidades
+                </a>
+            </div>
+            <br>
+            <div class="categories">
+                <a href="/restaurantes" class="category-link">
+                    <div class="category">
+                        <img src="images/comidas.jpg" alt="Restaurantes" class="category-image">
+                        <span class="category-name">Restaurantes</span>
+                    </div>
+                </a>
+                <a href="/eventos" class="category-link">
+                    <div class="category">
+                        <img src="images/eventos.jpg" alt="Eventos" class="category-image">
+                        <span class="category-name">Eventos</span>
+                    </div>
+                </a>
+                <a href="/parques" class="category-link">
+                    <div class="category">
+                        <img src="images/parques.jpg" alt="Parques" class="category-image">
+                        <span class="category-name">Parques</span>
+                    </div>
+                </a>
+                <a href="/artes" class="category-link">
+                    <div class="category">
+                        <img src="images/artes.jpg" alt="Artes" class="category-image">
+                        <span class="category-name">Artes</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="section-content">
+            <div class="section-header"> Localizem eventos que irão acontecer </div>
+            <div class="section-text">Selecione seus locais favoritos, combine atrações imperdíveis e personalize cada passo da sua experiência.</div>
+            <br>
+            <br>
+            <div class="video-container">
+                <div class="video-wrapper">
+                    <video class="video-style" autoplay loop muted>
+                        <source src="mp4/planetario.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos MP4.
+                    </video>
+                    <span class="video-description">
+                        Localizado em: 
+                        <a href="https://www.google.com.br/maps/place/Planet%C3%A1rio+do+Ibirapuera+Arist%C3%B3teles+Orsini/@-23.5843285,-46.6634886,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59ee8a18bb69:0x5930ef03cce191d7!8m2!3d-23.5843334!4d-46.6609137!16s%2Fg%2F1215vxmc?entry=ttu" target="_blank" style="text-decoration: none; color: blue;"><b>Ibirapuera</b> São Paulo - SP</a>
+                    </span>
+                </div>
+                <div class="video-wrapper">
+                    <video class="video-style" autoplay loop muted>
+                        <source src="mp4/vangogh.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos MP4.
+                    </video>
+                    <span class="video-description">
+                        Localizado em: 
+                        <a href="https://www.google.com.br/maps/place/Exposi%C3%A7%C3%A3o+Van+Gogh+no+Litoral+Plaza+Shopping/@-23.9968185,-46.4116077,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce1d75b4b1de99:0x4d951c7d8167b661!8m2!3d-23.9968234!4d-46.4090328!16s%2Fg%2F11vbw93vc5?entry=ttu" target="_blank" style="text-decoration: none; color: blue;"><b>Litoral Plaza Shopping</b> São Paulo - SP</a>
+                    </span>
+                </div>
+                <div class="video-wrapper">
+                    <video class="video-style" autoplay loop muted>
+                        <source src="mp4/aquario.mp4" type="video/mp4">
+                        Seu navegador não suporta vídeos MP4.
+                    </video>
+                    <span class="video-description">
+                        Localizado em: 
+                        <a href="https://www.google.com.br/maps/place/Planet%C3%A1rio+do+Ibirapuera+Arist%C3%B3teles+Orsini/@-23.5843285,-46.6634886,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59ee8a18bb69:0x5930ef03cce191d7!8m2!3d-23.5843334!4d-46.6609137!16s%2Fg%2F1215vxmc?entry=ttu" target="_blank" style="text-decoration: none; color: blue;"><b>Ibirapuera</b> São Paulo - SP</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="divider-line"></div>
+        <br>
+        <div class="resource-links">
+            <div class="resource-link">
+                <img src="https://via.placeholder.com/24x24" class="icon">
+                <span class="link-text">Pontos Turísticos Imperdíveis</span>
+            </div>
+            <div class="resource-link">
+                <img src="https://via.placeholder.com/24x24" class="icon">
+                <span class="link-text">Cultura e Arte em São Paulo -></span>
+            </div>
+            <div class="resource-link">
+                <img src="https://via.placeholder.com/24x24" class="icon">
+                <span class="link-text">Gastronomia Paulistana</span>
+            </div>
+        </div>
+        <br>
+        <div class="tourism-support-container">
+            <div class="divider-line"></div>
+            <div class="tourism-support-content">
+                <div class="tourism-support-title">Suporte ao Turista</div>
+                <div class="tourism-support-description">
+                    Precisa de ajuda para planejar sua viagem a São Paulo? Nossa equipe de suporte está pronta para ajudá-lo a descobrir os melhores lugares e experiências na cidade. Se tiver dúvidas sobre roteiros, acomodações ou eventos locais, entre em contato conosco.<br/>
+                    Para suporte imediato, visite nossa 
+                    <a href="#" class="tourism-support-link">página de FAQ</a> ou fale conosco através do 
+                    <a href="#" class="tourism-support-link">chat ao vivo</a>.
+                </div>
+                <div class="tourism-support-images">
+                    <img src="https://via.placeholder.com/267x150" alt="Central de Atendimento ao Turista" class="tourism-support-image" />
+                    <img src="https://via.placeholder.com/267x150" alt="Informações Turísticas Online" class="tourism-support-image" />
+                    <img src="https://via.placeholder.com/267x150" alt="Guia de Atrações de São Paulo" class="tourism-support-image" />
+                </div>
+                <div class="tourism-support-links">
+                    <div class="tourism-support-link-item">
+                        <img src="https://via.placeholder.com/24x24" alt="Ícone de Suporte" class="tourism-support-icon" />
+                        <a href="#" class="tourism-support-link-text">Converse com nosso suporte -></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="divider-line"></div>
+        <br>
+        <div class="feedback-container">
+            <div class="feedback-section">
+                <div class="feedback-title">Seu feedback é fundamental para nós</div>
+                <div class="feedback-text">
+                    Estamos em uma missão contínua para aprimorar nossos produtos e enriquecer sua experiência. Cada ideia, comentário ou sugestão que você compartilha é uma peça valiosa nesse quebra-cabeça.
+                </div>
+            </div>
+        </div>
+        <div class="newsletter__wrapper">
+            <div class="newsletter__container">
+                <div class="newsletter__info">
+                    <div>Feedback</div>
+                    <p class="newsletter-description">
+                        Se você tem algo a dizer, não hesite em nos contatar! Envie suas reflexões para apma,s@turismo.com.br. Aguardamos ansiosamente por suas ideias geniais!
+                    </p>
+                </div>
+                <form method="POST" class="form" id="newsletterForm" onsubmit="return false;">
+                    <input type="text" class="name" id="nameNews" name="nameNews" placeholder="Nome">
+                    <input type="text" class="email" id="cpfNews" name="cpfNews" placeholder="E-mail">
+                    <textarea class="email" id="emailNews" name="emailNews" placeholder="Comentário" rows="4"></textarea>
+                    <button id="sendNews" type="submit"><span><b>Enviar</b></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
