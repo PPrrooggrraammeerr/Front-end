@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <title>Apma's Turismo</title>
+</head>
+<body>
+<div class="carousel">
+    <button class="prev">&#10094;</button>
+        <div class="imagens-container">
+            <div class="imagem-texto">
+                <img src="images/Z_O.jpg" alt="Zona Oeste" class="imagem1">
+                <br> <br>
+                <span class="lugar">Zona Oeste</span>
+            </div>
+            <div class="imagem-texto">
+                <img src="images/Z_L.jpg" alt="Zona Leste" class="imagem2">
+                <br> <br>
+                <span class="lugar">Zona Leste</span>
+            </div>
+            <div class="imagem-texto">
+                <img src="images/Z_S.jpg" alt="Zona Sul" class="imagem3">
+                <br> <br>
+                <span class="lugar">Zona Sul</span>
+            </div>
+            <div class="imagem-texto">
+                <img src="images/Z_N.jpg" alt="Zona Norte" class="imagem4">
+                <br> <br>
+                <span class="lugar">Zona Norte</span>
+            </div>
+            <div class="imagem-texto">
+                <img src="images/Z_C.jpg" alt="Zona Oeste" class="imagem5">
+                <br> <br>
+                <span class="lugar">Zona Central</span>
+            </div>
+        </div>
+    <button class="next">&#10095;</button>
+</div>
+<script>
+
+document.addEventListener('DOMContentLoaded', (event) => {
+	const container = document.querySelector('.imagens-container');
+	const btnPrev = document.querySelector('.prev');
+	const btnNext = document.querySelector('.next');
+
+	btnNext.addEventListener('click', () => {
+		container.scrollLeft += container.offsetWidth;
+	});
+
+	btnPrev.addEventListener('click', () => {
+		container.scrollLeft -= container.offsetWidth;
+	});
+});
+
+</script>
+<style>
+.carousel {
+	display: flex;
+	align-items: center;
+	justify-content: space-between; /* Distribui o espaço igualmente */
+	padding: 0 20px; /* Espaço nas bordas para as setas */
+}
+
+.prev, .next {
+	flex: 0 0 auto; /* Não permite o redimensionamento automático das setas */
+	cursor: pointer;
+	background-color: #ddd;
+	border: none;
+	padding: 10px;
+	z-index: 10; /* Assegura que as setas estejam acima dos outros elementos */
+}
+
+.imagens-container {
+	display: flex;
+	flex-grow: 1; /* Permite que o contêiner cresça para preencher o espaço disponível */
+	overflow-x: hidden; /* Esconde a barra de rolagem horizontal */
+	margin: 0 10px; /* Espaçamento entre as setas e o conteúdo */
+	scroll-behavior: smooth;
+}
+
+.imagem-texto {
+	flex: 0 0 auto; /* Mantém o tamanho das imagens/textos */
+	margin-right: 20px; /* Espaçamento entre cada item */
+}
+
+
+.imagem1 {
+	width: 350px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.imagem2 {
+	width: 350px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.imagem3 {
+	width: 350px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.imagem4 {
+	width: 350px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.imagem5 {
+	width: 350px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.lugar {
+	font-size: 25px;
+	font-weight: bold;
+}
+</style>
+</body>
+</html>

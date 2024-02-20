@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="icons/logo.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/index.css">
+    <title>Apma's Turismo</title>
+</head>
+<body>
+    <footer class="up"> </footer>
+    <div class="container">
+        <div class="header">
+            <img src="icons/logo.png" alt="Logo" class="logo-image">
+            <div class="title">
+                <div class="search-container">
+                    <input type="search" id="searchBar" name="searchBar" placeholder="Aonde quer ir..." aria-label="Buscar">
+                </div>
+            </div>
+            <h1> | </h1>
+            <div class="social-links">
+                <div class="menu-icon" onclick="toggleMenu()">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+					<div class="menu-options">
+						<ul>
+							<li><a href="index.html" class="mymenu" title="Home">Início</a></li>
+							<li><a href="sobre.html" class="mymenu" title="Sobre">Sobre</a></li>
+							<li><a href="novidades.html" class="mymenu" title="Portfolio">Novidades</a></li>
+							<li><a href="contato.html" class="mymenu" title="Contato">Contato</a></li>
+						</ul>
+					</div>
+                </div>
+                <script>
+                    function toggleMenu(event) {
+                        const menu = document.querySelector('.menu-options');
+                        menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+
+                        event.stopPropagation();
+                    }
+
+                    document.addEventListener('click', function(event) {
+                        if (!event.target.closest('.menu-icon')) {
+                            const allMenus = document.querySelectorAll('.menu-options');
+                            allMenus.forEach(menu => menu.style.display = 'none');
+                        }
+                    });
+
+                    document.querySelector('.menu-icon').addEventListener('click', function(event) {
+                        event.stopPropagation();
+                    });
+                </script>
+            </div>
+        </div>
+        <div class="content">
+            <br>
+            <div class="heading">Seja bem-vindo(a) ao Apma's turismo!</div>
+            <br>
+            <div class="subheading">Fique por dentro das novidades e acompanhe uma grande página de dicas de São Paulo em um só lugar.</div>
+        </div>
+        <div class="divider-line"></div>
+        <br>
+        <div class="section">
+            <div class="section-title">Descubra São Paulo</div>
+            <div class="section-content">
+                <div class="section-header">Guia de turismo com diversas categorias</div>
+                <div class="section-text">Explore as maravilhas de São Paulo com nosso guia turístico completo. Encontre abaixo recursos e dicas para aproveitar o melhor da cidade:</div>
+            </div>
+            <div class="banner">
+                <img src="images/ponte.jpg" alt="Vista de São Paulo" class="banner-image">
+                <a href="novidades.html" class="calendar-link">
+                    Novidades
+                </a>
+            </div>
+            <br>
+            <div class="categories">
+                <a href="restaurantes.html" class="category-link">
+                    <div class="category">
+                        <img src="images/comidas.jpg" alt="Restaurantes" class="category-image">
+                        <span class="category-name">Restaurantes</span>
+                    </div>
+                </a>
+                <a href="eventos.html" class="category-link">
+                    <div class="category">
+                        <img src="images/eventos.jpg" alt="Eventos" class="category-image">
+                        <span class="category-name">Eventos</span>
+                    </div>
+                </a>
+                <a href="parques.html" class="category-link">
+                    <div class="category">
+                        <img src="images/parques.jpg" alt="Parques" class="category-image">
+                        <span class="category-name">Parques</span>
+                    </div>
+                </a>
+                <a href="artes.html" class="category-link">
+                    <div class="category">
+                        <img src="images/artes.jpg" alt="Artes" class="category-image">
+                        <span class="category-name">Artes</span>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <br>
+        <div class="section-content">
+            <div class="section-header"> Localizem eventos em regiões diversas </div>
+            <div class="section-text">Selecione seus locais favoritos, combine atrações imperdíveis e personalize cada passo da sua experiência.</div>
+            <br>
+            <br>
+            <div class="video-container">
+                <div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/monica.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com/maps/place/Casa+das+Rosas/@-23.5710635,-46.6451532,15z/data=!4m6!3m5!1s0x94ce59192c03bd0f:0x813f0ccfba6bd7cf!8m2!3d-23.5710635!4d-46.6451532!16s%2Fg%2F1218lbq6?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Casa das Rosas, São Paulo - SP</span>
+					</a>
+				</div>
+                <div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/parque.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com/maps/place/Morumbi+Park/@-23.6275976,-46.7171367,15z/data=!4m6!3m5!1s0x94ce51b3cb5c64f9:0xd97c97116a871448!8m2!3d-23.6275976!4d-46.7171367!16s%2Fg%2F11jt3fy780?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Jardim Fonte do Morumbi, São Paulo - SP</span>
+					</a>
+				</div>
+				<div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/exposicao.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com/maps/place/Centro+Cultural+Banco+do+Brasil+-+S%C3%A3o+Paulo/@-23.547928,-46.6347405,18.82z/data=!4m6!3m5!1s0x94ce5854dbd1f945:0x21fef367fa9ba978!8m2!3d-23.5474352!4d-46.6346075!16s%2Fg%2F1jky7s048?coh=164777&entry=tt&shorturl=1" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Centro Cultural Banco do Brasil, São Paulo - SP</span>
+					</a>
+				</div>
+				<div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/aquario.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com.br/maps/place/Aquário+de+São+Paulo/@-23.5933033,-46.6166203,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5bc2264b2eab:0xdcedf7497b30d750!8m2!3d-23.5933082!4d-46.6140454!16s%2Fg%2F122_gsd9?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Vila São José, São Paulo - SP</span>
+					</a>
+				</div>
+            </div>
+			<br>
+			<div class="video-container">
+				<div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/aquario.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com.br/maps/place/Aquário+de+São+Paulo/@-23.5933033,-46.6166203,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce5bc2264b2eab:0xdcedf7497b30d750!8m2!3d-23.5933082!4d-46.6140454!16s%2Fg%2F122_gsd9?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Vila São José, São Paulo - SP</span>
+					</a>
+				</div>
+                <div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/planetario.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com.br/maps/place/Planet%C3%A1rio+do+Ibirapuera+Arist%C3%B3teles+Orsini/@-23.5843285,-46.6634886,17z/data=!3m1!4b1!4m6!3m5!1s0x94ce59ee8a18bb69:0x5930ef03cce191d7!8m2!3d-23.5843334!4d-46.6609137!16s%2Fg%2F1215vxmc?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Parque Ibirapuera, São Paulo - SP</span>
+					</a>
+				</div>
+				<div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/vangogh.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com/maps/place/Exposi%C3%A7%C3%A3o+Van+Gogh/@-23.5164309,-46.6151972,15z/data=!4m6!3m5!1s0x94ce59005ea17bd5:0x6fe10189926f8eae!8m2!3d-23.5164309!4d-46.6151972!16s%2Fg%2F11vs520lwl?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Vila Guilherme, São Paulo - SP</span>
+					</a>
+				</div>
+				<div class="video-wrapper">
+					<video class="video-style" autoplay loop muted>
+						<source src="mp4/monica.mp4" type="video/mp4">
+						Seu navegador não suporta vídeos MP4.
+					</video>
+					<a href="https://www.google.com/maps/place/Casa+das+Rosas/@-23.5710635,-46.6451532,15z/data=!4m6!3m5!1s0x94ce59192c03bd0f:0x813f0ccfba6bd7cf!8m2!3d-23.5710635!4d-46.6451532!16s%2Fg%2F1218lbq6?entry=ttu" target="_blank" class="video-description">
+						<img src="icons/local.png" alt="Ícone de localização" class="icon-location"/>
+						<span> <b> Localizado em: </b> <br> Casa das Rosas, São Paulo - SP</span>
+					</a>
+				</div>
+			</div>
+        </div>
+        <br>
+        <div class="divider-line"></div>
+        <br>
+        <div class="feedback-container">
+            <div class="feedback-section">
+                <div class="feedback-title">Seu feedback é fundamental para nós</div>
+                <div class="section-text">
+                    Estamos em uma missão contínua para aprimorar nossos produtos e enriquecer sua experiência. Cada ideia, comentário ou sugestão que você compartilha é uma peça valiosa nesse quebra-cabeça.
+                </div>
+            </div>
+        </div>
+        <div class="newsletter__wrapper">
+            <div class="newsletter__container">
+                <div class="newsletter__info">
+                    <div>Feedback's</div>
+                    <p class="newsletter-description">
+                        Se você tem algo a dizer, não hesite em nos contatar! Envie suas reflexões para apma,s@turismo.com.br. Aguardamos ansiosamente por suas ideias geniais!
+                    </p>
+                </div>
+                <form method="POST" class="form" id="newsletterForm" onsubmit="return false;">
+                    <input type="text" class="name" id="nameNews" name="nameNews" placeholder="Nome">
+                    <input type="text" class="email" id="cpfNews" name="cpfNews" placeholder="E-mail">
+                    <textarea class="email" id="emailNews" name="emailNews" placeholder="Comentário" rows="4"></textarea>
+                    <button id="sendNews" type="submit"><span><b>Enviar</b></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <br> <br> <br>
+	<footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <img src="icons/mascote.png" alt="mascote" class="mascote"/>
+				<h1> Siga-nos </h1>
+                <div id="footer_social_media">
+					<a href="https://www.instagram.com/apmas_oficial/" class="footer-link" id="instagram-img">
+						<img src="icons/instagram.png" alt="Instagram">
+					</a>
+                    <a href="#" class="footer-link" id="tiktok-img">
+						<img src="icons/tiktok.png" alt="Tiktok">
+					</a>
+                    <a href="#" class="footer-link" id="whatsapp-img">
+						<img src="icons/Whatsapp.png" alt="Whatsapp">
+					</a>
+                </div>
+            </div>
+            <ul class="footer-list">
+                <li>
+                    <h3>Blog</h3>
+                </li>
+                <li>
+                    <a href="index.html" class="footer-link">Início</a>
+                </li>
+                <li>
+                    <a href="calendario.html" class="footer-link">Calendário</a>
+                </li>
+                <li>
+                    <a href="eventos.html" class="footer-link">Eventos</a>
+                </li>
+            </ul>
+            <ul class="footer-list">
+                <li>
+                    <h3>Páginas</h3>
+                </li>
+                <li>
+                    <a href="sobre.html" class="footer-link">Sobre</a>
+                </li>
+                <li>
+                    <a href="novidades.html" class="footer-link">Novidades</a>
+                </li>
+                <li>
+                    <a href="contato.html" class="footer-link">Contato</a>
+                </li>
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Inscreva-se</h3>
+                <p>
+                    Informe seu e-mail e receba notificações sobre novas atualizações e postagens
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email" placeholder="E-mail">
+                    <button>
+						<b> Enviar </b>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 all rights reserved | apma's@turismo.com.br
+        </div>
+    </footer>
+</body>
+</html>
